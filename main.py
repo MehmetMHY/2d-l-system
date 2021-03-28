@@ -80,16 +80,6 @@ def load_save():
         message = "The file/path you have inputed does not exist!"
         messagebox.showerror("INVALID INPUT", message)
 
-# generate an info message of all the paths to all the saved pickle file states
-def list_saved_pickles(path="."):
-    tmp = pf.find_all_pickle_files(path)
-    message = "PATHS: \n"
-    for p in tmp:
-        message = message + "\n" + str(p)
-
-    print("\n" + message + "\n")
-    messagebox.showinfo("Saved Pickle Files PATHs", message)
-
 # print all the options for running the main script
 def command_options():
     print("""
@@ -108,6 +98,24 @@ def move_to_saves():
     else:
         messagebox.showinfo("FAILED To Move Any Remaining .pickle Files(s)", "Sorry for the error, please correct it if possible!")
 
+# generate a new window for all the paths to all the saved pickle file states
+def list_saved_pickles(path="."):
+    global root
+    
+    tmp = pf.find_all_pickle_files(path)
+    message = "PATHS: \n"
+    for p in tmp:
+        message = message + "\n" + str(p)
+
+    # create new tkinter window (toplevel)
+    paths_window = Toplevel(root)
+    paths_window.title("Saved Pickle File PATHS")
+
+    # add text of pickle file paths to new tkinter window
+    paths_text = tk.Text(paths_window)
+    paths_text.insert(tk.END, message)
+    paths_text.pack()
+
 #######################################################
 #################[ Main TK GUI Setup ]#################
 #######################################################
@@ -119,7 +127,7 @@ command_options()
 
 # print gui advice/warning message, toggle on/off by changing the boolean below
 if "-nw" not in list(sys.argv):
-    messagebox.showerror("Advice/Warning", "Please do not close either of the two windows well in use. Either keep both windows open or close ALL of the windows when you are don using the program.")
+    messagebox.showerror("Advice/Warning", "Please do not close either of the two windows well in use. Either keep both windows open or close ALL of the windows when you are done using the program.")
 
 tk.Label(root, text="title (str)").grid(row=0)
 tk.Label(root, text="variables (list)").grid(row=1)

@@ -3,6 +3,9 @@ import subprocess
 import re
 import os
 import os.path
+from os import listdir
+import subprocess
+
 
 # save basic python variables/data to a pickle file (.p)
 def pickle_save(filename, data):
@@ -53,7 +56,7 @@ def find_all_pickle_files(path):
     return pickle_files
 
 def move_to_saves():
-    ideal_directory = "L-System"
+    ideal_directory = "2d-l-system"
 
     ideal_directory.replace("/", "")
 
@@ -63,12 +66,24 @@ def move_to_saves():
 
     aoi = aoi.replace("/", "")
 
-    if(aoi == ideal_directory and os.path.isdir(current_pwd + "saves")):
-        os.system("mv *.pickle ./saves")
-        print("Moved Every .pickle File In Project To saves/")
-        return True
+    ls_output = subprocess.check_output("ls -a", shell=True)
+    ls_output = ls_output.decode('ascii')
+
+    there_pickle = ".pickle" in ls_output
+
+    if(aoi == ideal_directory):
+        if(os.path.isdir(current_pwd + "saves")):
+            if(there_pickle):
+                os.system("mv *.pickle ./saves")
+                print("Moved Every .pickle File In Project To saves/")
+                return True
+            else:
+                print("Failed To Move .pickle, there are no .pickle files to move")
+        else:
+            print("Failed To Move .pickle, there is no saves/ directory")
     else:
-        print("Failed To Move .pickle Files To saves/")
-        return False
+        print("Failed To Move .pickle, PATH not in set ideal_directory: " + str(ideal_directory))
+    
+    return False
 
 

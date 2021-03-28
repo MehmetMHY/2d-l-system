@@ -51,3 +51,5 @@ python3 eps_to_png.py example.eps example.png
 - 3) http://www.motionesque.com/beautyoffractals/
 - 4) http://paulbourke.net/fractals/lsys/
 - 5) https://www.python-course.eu/tkinter_entry_widgets.php
+- 6) https://www.python-course.eu/tkinter_text_widget.php
+- 7) https://www.geeksforgeeks.org/open-a-new-window-with-a-button-in-python-tkinter/
