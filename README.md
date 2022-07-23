@@ -36,28 +36,27 @@
 
 ## How To Use:
 - Run main.py script to run everything, with the following command (run this once and after you understand the warning message, then start running this command with the -nw option):
-
-```
-python3 main.py
-```
+	```
+	python3 main.py
+	```
 - Run the main.py script without the initial warning message everytime:
-```
-python3 main.py -nw
-```
+	```
+	python3 main.py -nw
+	```
 - To convert an eps file to a png, you can use the eps_to_png.py python script by running a command like this:
 
-```
-python3 eps_to_png.py example.eps example.png
-```
+	```
+	python3 eps_to_png.py example.eps example.png
+	```
 
 ## Future Plans:
 - This code is not perfect and is limited to 2D only. So in the feature I would like to implment this code for 3D L-Systems. I might need to use either Pygame or Unity, I will most liky use Unity for a 3D implmentation of this.
 
 ## Great Sources I Used:
-- 1) https://en.wikipedia.org/wiki/L-system
-- 2) http://paulbourke.net/fractals/lsys/
-- 3) http://www.motionesque.com/beautyoffractals/
-- 4) http://paulbourke.net/fractals/lsys/
-- 5) https://www.python-course.eu/tkinter_entry_widgets.php
-- 6) https://www.python-course.eu/tkinter_text_widget.php
-- 7) https://www.geeksforgeeks.org/open-a-new-window-with-a-button-in-python-tkinter/
+1. https://en.wikipedia.org/wiki/L-system
+2. http://paulbourke.net/fractals/lsys/
+3. http://www.motionesque.com/beautyoffractals/
+4. http://paulbourke.net/fractals/lsys/
+5. https://www.python-course.eu/tkinter_entry_widgets.php
+6. https://www.python-course.eu/tkinter_text_widget.php
+7. https://www.geeksforgeeks.org/open-a-new-window-with-a-button-in-python-tkinter/
