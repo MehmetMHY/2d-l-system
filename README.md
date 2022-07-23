@@ -14,9 +14,9 @@
 	- pfuncs.py : class with functions used to save/load pickle files with L-System saves. It also contains functions for getting the current pwd and creating a list of every file path to a pickle file in the project folder.
 	- main.py : main python script for this project. Here the GUI is setup and ran as well as everything else. The main.py script depends on draw.py and puncs.py.
 - For this project, there are two other directories:
-	- assets : contains random files and some backup files
+	- tools : contains useful scripts as well as some random files and some backup files
 	- saves : contains all the L-System saves I saved so far
-- In assets/, there is a python script called eps_to_png.py. This is a script that can convert an inputed .eps file to a .png file.
+- In tools/, there is a python script called eps_to_png.py. This is a script that can convert an inputed .eps file to a .png file.
 	- This script works most of the time, but fails sometimes. So I did not want to include it in the final code.
 
 ## Requriements:
