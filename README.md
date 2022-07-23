@@ -1,6 +1,6 @@
 # Simple 2D L-System Python Implmentation
 
-<img width="1920" alt="1" src="https://user-images.githubusercontent.com/15916367/112735892-513cf780-8f14-11eb-87f5-9a312811439b.png">
+<img width="1920" alt="1" src="./assets/demo_img.png">
 
 ## About:
 - I always wanted to implment an L-System, so I did.
