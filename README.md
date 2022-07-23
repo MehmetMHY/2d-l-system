@@ -19,12 +19,20 @@
 - In tools/, there is a python script called eps_to_png.py. This is a script that can convert an inputed .eps file to a .png file.
 	- This script works most of the time, but fails sometimes. So I did not want to include it in the final code.
 
+## Tested On:
+- Operating Systems:
+	- MacOS Catalina (10.15.7)
+	- Ubuntu 20.04
+- Software:
+	- Python3 3.8.13
+
 ## Requriements:
 - Python3
-	- tkinter
-	- turtle
-	- subprocess
-	- os
+	- Built-In Pkgs:
+		- tkinter
+		- turtle
+		- subprocess
+		- os
 
 ## How To Use:
 - Run main.py script to run everything, with the following command (run this once and after you understand the warning message, then start running this command with the -nw option):
