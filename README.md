@@ -4,7 +4,7 @@
 
 ## About:
 - I always wanted to implment an L-System, so I did.
-- To learn more about L-Systems, please check out the wikipedia link in the sources section.
+- To learn more about L-Systems [HERE](https://en.wikipedia.org/wiki/L-system)
 - Originally this project was a terminal only program, but though tkinter, it evolved to a GUI & terminal program.
 - This project use to be in the algorithm-challenges repo, which has been deprecated until further notice. Due to this, I moved this project to this new repo.
 
